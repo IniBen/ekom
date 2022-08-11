@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgba(46, 46, 79, 0.8);
+    padding: 8px;
+    box-shadow: 0 0 3px black;
+}
+nav {
+    display:flex;
+    padding: 2% 6%;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(46, 6, 46);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+.background {
+    background-image: linear-gradient(rgba(137, 137, 186, 0.8), rgba(78, 78, 132, 0.8)), url(https://images.pexels.com/photos/1172849/pexels-photo-1172849.jpeg?cs=srgb&dl=pexels-jess-bailey-designs-1172849.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    
+}
+.left-image {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+    height: 800px;
+   margin: auto;
+   background-color: rgba(137, 137, 186, 0.8);
+   padding: 0 20px;
+   text-align: justify;
+   word-spacing: 8px;
+   font-size: large;
+   line-height: 2rem;
+
+
+}
+footer{
+    background-color: rgba(46, 46, 79, 0.8);
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+i{
+    color:rgba(51, 30, 76, 0.8);
+}
